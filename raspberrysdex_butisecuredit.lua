@@ -1265,7 +1265,7 @@ NewGuiPart107.Size = UDim2.new(0, 100, 0, 60)
 NewGuiPart107.ZIndex = 2
 NewGuiPart107.Font = Enum.Font.SourceSansBold
 NewGuiPart107.FontSize = Enum.FontSize.Size60
-NewGuiPart107.Text = "DEX"
+NewGuiPart107.Text = "DEX by RaspberryPi"
 NewGuiPart107.TextWrapped = true
 
 NewGuiPart108.Name = "Version"
@@ -1289,7 +1289,7 @@ NewGuiPart109.Size = UDim2.new(0, 140, 0, 30)
 NewGuiPart109.ZIndex = 2
 NewGuiPart109.Font = Enum.Font.SourceSansBold
 NewGuiPart109.FontSize = Enum.FontSize.Size28
-NewGuiPart109.Text = "Raspberry Pi , Script Made By Advancedev"
+NewGuiPart109.Text = "Secured by yixiyotatsuki"
 NewGuiPart109.TextWrapped = true
 
 NewGuiPart110.Name = "Slant"
