@@ -8,7 +8,7 @@ end
 local propframe,exppanel,sidemenu,tog,setpanel,saveinst,conf,caution,callremote,tablecaution,scriptedit,introframe,savemapwin,remdbugwin=randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring()
 CreateGui = function()
 local NewGuiPart1 = Instance.new("ScreenGui")
-local NewGuiPart2 = Instance.new("Frame")/
+local NewGuiPart2 = Instance.new("Frame")
 local NewGuiPart3 = Instance.new("Frame")
 local NewGuiPart4 = Instance.new("TextLabel")
 local NewGuiPart5 = Instance.new("TextBox")
