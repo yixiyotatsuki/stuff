@@ -1,6 +1,6 @@
 function randomstring()
   local text = ""
-  for i=1,100 do
+  for i=1,50 do
     text=text..string.char(math.random(1,128))
   end
   return(text)
