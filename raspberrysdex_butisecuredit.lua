@@ -8709,6 +8709,3 @@ scrollBar:Update()
 scrollBarH:Update()
 end)
 D_E_X.ResetOnSpawn=false
-for _,v in D_E_X:GetDescendants() do
-  v.Name=randomstring()
-end
