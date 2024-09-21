@@ -1265,7 +1265,7 @@ NewGuiPart107.Size = UDim2.new(0, 100, 0, 60)
 NewGuiPart107.ZIndex = 2
 NewGuiPart107.Font = Enum.Font.SourceSansBold
 NewGuiPart107.FontSize = Enum.FontSize.Size60
-NewGuiPart107.Text = "DEX by RaspberryPi"
+NewGuiPart107.Text = "DEX"
 NewGuiPart107.TextWrapped = true
 
 NewGuiPart108.Name = "Version"
@@ -1273,11 +1273,11 @@ NewGuiPart108.Parent = NewGuiPart105
 NewGuiPart108.BackgroundColor3 = Color3.new(1, 1, 1)
 NewGuiPart108.BackgroundTransparency = 1
 NewGuiPart108.Position = UDim2.new(0, 100, 0, 210)
-NewGuiPart108.Size = UDim2.new(0, 100, 0, 30)
+NewGuiPart108.Size = UDim2.new(0, 200, 0, 60)
 NewGuiPart108.ZIndex = 2
 NewGuiPart108.Font = Enum.Font.SourceSansBold
 NewGuiPart108.FontSize = Enum.FontSize.Size28
-NewGuiPart108.Text = "V2.0.0"
+NewGuiPart108.Text = "RaspberryPi"
 NewGuiPart108.TextWrapped = true
 
 NewGuiPart109.Name = "Creator"
@@ -1285,11 +1285,11 @@ NewGuiPart109.Parent = NewGuiPart105
 NewGuiPart109.BackgroundColor3 = Color3.new(1, 1, 1)
 NewGuiPart109.BackgroundTransparency = 1
 NewGuiPart109.Position = UDim2.new(0, 80, 0, 300)
-NewGuiPart109.Size = UDim2.new(0, 140, 0, 30)
+NewGuiPart109.Size = UDim2.new(0, 300, 0, 80)
 NewGuiPart109.ZIndex = 2
 NewGuiPart109.Font = Enum.Font.SourceSansBold
 NewGuiPart109.FontSize = Enum.FontSize.Size28
-NewGuiPart109.Text = "Made by RaspberryPi, Secured by yixiyotatsuki"
+NewGuiPart109.Text = "Secured by yixiyotatsuki"
 NewGuiPart109.TextWrapped = true
 
 NewGuiPart110.Name = "Slant"
