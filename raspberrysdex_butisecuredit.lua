@@ -5,9 +5,10 @@ function randomstring()
   end
   return(text)
 end
+local propframe,exppanel,sidemenu,tog,setpanel,saveinst,conf,caution,callremote,tablecaution,scriptedit,introframe,savemapwin,remdbugwin=randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring(),randomstring()
 CreateGui = function()
 local NewGuiPart1 = Instance.new("ScreenGui")
-local NewGuiPart2 = Instance.new("Frame")
+local NewGuiPart2 = Instance.new("Frame")/
 local NewGuiPart3 = Instance.new("Frame")
 local NewGuiPart4 = Instance.new("TextLabel")
 local NewGuiPart5 = Instance.new("TextBox")
@@ -173,7 +174,7 @@ local NewGuiPart163 = Instance.new("BindableEvent")
 
 NewGuiPart1.Name = randomstring()
 
-NewGuiPart2.Name = "PropertiesFrame"
+NewGuiPart2.Name = propframe
 NewGuiPart2.Parent = NewGuiPart1
 NewGuiPart2.Active = true
 NewGuiPart2.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -221,7 +222,7 @@ NewGuiPart5.Text = "Search Properties"
 --NewGuiPart5.TextColor3 = Color3.new(0, 0, 0)
 NewGuiPart5.TextXAlignment = Enum.TextXAlignment.Left
 
-NewGuiPart6.Name = "ExplorerPanel"
+NewGuiPart6.Name = exppanel
 NewGuiPart6.Parent = NewGuiPart1
 NewGuiPart6.BackgroundColor3 = Color3.new(1, 1, 1)
 NewGuiPart6.BackgroundTransparency = 0.10000000149012
@@ -249,7 +250,7 @@ NewGuiPart157.Name = "TotallyNotSelectionChanged"
 NewGuiPart157.Parent = NewGuiPart6
 NewGuiPart157.Archivable = true
 
-NewGuiPart7.Name = "SideMenu"
+NewGuiPart7.Name = sidemenu
 NewGuiPart7.Parent = NewGuiPart1
 NewGuiPart7.BackgroundColor3 = Color3.new(0.913726, 0.913726, 0.913726)
 NewGuiPart7.BackgroundTransparency = 1
@@ -260,7 +261,7 @@ NewGuiPart7.Size = UDim2.new(0, 30, 0, 180)
 NewGuiPart7.Visible = false
 NewGuiPart7.ZIndex = 2
 
-NewGuiPart8.Name = "Toggle"
+NewGuiPart8.Name = tog
 NewGuiPart8.Parent = NewGuiPart7
 NewGuiPart8.Active = false
 NewGuiPart8.BackgroundColor3 = Color3.new(0.913726, 0.913726, 0.913726)
@@ -477,7 +478,7 @@ NewGuiPart27.Font = Enum.Font.SourceSans
 NewGuiPart27.FontSize = Enum.FontSize.Size24
 NewGuiPart27.Text = "<"
 
-NewGuiPart28.Name = "SettingsPanel"
+NewGuiPart28.Name = setpanel
 NewGuiPart28.Parent = NewGuiPart1
 NewGuiPart28.BackgroundColor3 = Color3.new(1, 1, 1)
 NewGuiPart28.BackgroundTransparency = 0.10000000149012
@@ -572,7 +573,7 @@ NewGuiPart37.BackgroundTransparency = 1
 NewGuiPart37.Position = UDim2.new(0, 0, 0, 17)
 NewGuiPart37.Size = UDim2.new(1, 0, 1, -17)
 
-NewGuiPart38.Name = "SaveInstance"
+NewGuiPart38.Name = saveinst
 NewGuiPart38.Parent = NewGuiPart1
 NewGuiPart38.Active = true
 NewGuiPart38.BackgroundColor3 = Color3.new(0.913726, 0.913726, 0.913726)
@@ -679,7 +680,7 @@ NewGuiPart47.FontSize = Enum.FontSize.Size14
 NewGuiPart47.Text = "Save \"Object\" type values"
 NewGuiPart47.TextXAlignment = Enum.TextXAlignment.Left
 
-NewGuiPart48.Name = "Confirmation"
+NewGuiPart48.Name = conf
 NewGuiPart48.Parent = NewGuiPart1
 NewGuiPart48.Active = true
 NewGuiPart48.BackgroundColor3 = Color3.new(0.913726, 0.913726, 0.913726)
@@ -745,7 +746,7 @@ NewGuiPart53.Font = Enum.Font.SourceSans
 NewGuiPart53.FontSize = Enum.FontSize.Size18
 NewGuiPart53.Text = "No"
 
-NewGuiPart54.Name = "Caution"
+NewGuiPart54.Name = caution
 NewGuiPart54.Parent = NewGuiPart1
 NewGuiPart54.Active = true
 NewGuiPart54.BackgroundColor3 = Color3.new(0.913726, 0.913726, 0.913726)
@@ -799,7 +800,7 @@ NewGuiPart58.Font = Enum.Font.SourceSans
 NewGuiPart58.FontSize = Enum.FontSize.Size18
 NewGuiPart58.Text = "Ok"
 
-NewGuiPart59.Name = "CallRemote"
+NewGuiPart59.Name = callremote
 NewGuiPart59.Parent = NewGuiPart1
 NewGuiPart59.Active = true
 NewGuiPart59.BackgroundColor3 = Color3.new(0.913726, 0.913726, 0.913726)
@@ -957,7 +958,7 @@ NewGuiPart73.Font = Enum.Font.SourceSans
 NewGuiPart73.FontSize = Enum.FontSize.Size18
 NewGuiPart73.Text = "Call"
 
-NewGuiPart74.Name = "TableCaution"
+NewGuiPart74.Name = tablecaution
 NewGuiPart74.Parent = NewGuiPart1
 NewGuiPart74.Active = true
 NewGuiPart74.BackgroundColor3 = Color3.new(0.913726, 0.913726, 0.913726)
@@ -1035,7 +1036,7 @@ NewGuiPart81.Text = "Caution"
 NewGuiPart81.TextColor3 = Color3.new(0, 0, 0)
 NewGuiPart81.TextXAlignment = Enum.TextXAlignment.Left
 
-NewGuiPart82.Name = "ScriptEditor"
+NewGuiPart82.Name = scriptedit
 NewGuiPart82.Parent = NewGuiPart1
 NewGuiPart82.Active = true
 NewGuiPart82.BackgroundColor3 = Color3.new(0.913726, 0.913726, 0.913726)
@@ -1240,7 +1241,7 @@ NewGuiPart104.Font = Enum.Font.SourceSans
 NewGuiPart104.FontSize = Enum.FontSize.Size14
 NewGuiPart104.Text = "X"
 
-NewGuiPart105.Name = "IntroFrame"
+NewGuiPart105.Name = introframe
 NewGuiPart105.Parent = NewGuiPart1
 NewGuiPart105.BackgroundColor3 = Color3.new(0.960784, 0.960784, 0.960784)
 NewGuiPart105.BorderSizePixel = 0
@@ -1303,7 +1304,7 @@ NewGuiPart110.ZIndex = 2
 NewGuiPart110.Image = "rbxassetid://474172996"
 NewGuiPart110.ImageColor3 = Color3.new(0.960784, 0.960784, 0.960784)
 
-NewGuiPart111.Name = "SaveMapWindow"
+NewGuiPart111.Name = savemapwin
 NewGuiPart111.Parent = NewGuiPart1
 NewGuiPart111.BackgroundColor3 = Color3.new(1, 1, 1)
 NewGuiPart111.BackgroundTransparency = 0.10000000149012
@@ -1668,7 +1669,7 @@ NewGuiPart148.Text = "Workspace"
 NewGuiPart148.TextColor3 = Color3.new(0, 0, 0)
 NewGuiPart148.TextXAlignment = Enum.TextXAlignment.Left
 
-NewGuiPart149.Name = "RemoteDebugWindow"
+NewGuiPart149.Name = remdbugwin
 NewGuiPart149.Parent = NewGuiPart1
 NewGuiPart149.BackgroundColor3 = Color3.new(1, 1, 1)
 NewGuiPart149.BackgroundTransparency = 0.10000000149012
@@ -1713,11 +1714,13 @@ D_E_X.Parent = game.CoreGui
 spawn(function()
 	local Gui = D_E_X
 	
+function wfc(name)
+	return D_E_X:WaitForChild(name)
+end
+local IntroFrame = wfc(introframe)
 
-local IntroFrame = Gui:WaitForChild("IntroFrame")
-
-local SideMenu = Gui:WaitForChild("SideMenu")
-local OpenToggleButton = Gui:WaitForChild("Toggle")
+local SideMenu = wfc(sidemenu)
+local OpenToggleButton = wfc(tog)
 local CloseToggleButton = SideMenu:WaitForChild("Toggle")
 local OpenScriptEditorButton = SideMenu:WaitForChild("OpenScriptEditor")
 
@@ -1733,12 +1736,12 @@ local SettingsButton = SlideFrame:WaitForChild("Settings")
 local SelectionBox = Instance.new("SelectionBox")
 SelectionBox.Parent = Gui
 
-local ExplorerPanel = Gui:WaitForChild("ExplorerPanel")
-local PropertiesFrame = Gui:WaitForChild("PropertiesFrame")
-local SaveMapWindow = Gui:WaitForChild("SaveMapWindow")
-local RemoteDebugWindow = Gui:WaitForChild("RemoteDebugWindow")
+local ExplorerPanel = Gui:WaitForChild(exppanel)
+local PropertiesFrame = Gui:WaitForChild(propframe)
+local SaveMapWindow = wfc(savemapwin)
+local RemoteDebugWindow = wfc(remdbugwin)
 
-local SettingsPanel = Gui:WaitForChild("SettingsPanel")
+local SettingsPanel = wfc(setpanel)
 local SettingsListener = SettingsPanel:WaitForChild("GetSetting")
 local SettingTemplate = SettingsPanel:WaitForChild("SettingTemplate")
 local SettingList = SettingsPanel:WaitForChild("SettingList")
@@ -3286,14 +3289,14 @@ local GetApiRemote = explorerPanel.Parent:WaitForChild("PropertiesFrame"):WaitFo
 local GetAwaitRemote = explorerPanel.Parent:WaitForChild("PropertiesFrame"):WaitForChild("GetAwaiting")
 local bindSetAwaiting = explorerPanel.Parent:WaitForChild("PropertiesFrame"):WaitForChild("SetAwaiting")
 
-local SaveInstanceWindow = explorerPanel.Parent:WaitForChild("SaveInstance")
-local ConfirmationWindow = explorerPanel.Parent:WaitForChild("Confirmation")
-local CautionWindow = explorerPanel.Parent:WaitForChild("Caution")
-local TableCautionWindow = explorerPanel.Parent:WaitForChild("TableCaution")
+local SaveInstanceWindow = wfc(saveinst)
+local ConfirmationWindow = wfc(conf)
+local CautionWindow = wfc(caution)
+local TableCautionWindow = wfc(tablecaution)
 
-local RemoteWindow = explorerPanel.Parent:WaitForChild("CallRemote")
+local RemoteWindow = wfc(callremote)
 
-local ScriptEditor = explorerPanel.Parent:WaitForChild("ScriptEditor")
+local ScriptEditor = wfc(scriptedit)
 local ScriptEditorEvent = ScriptEditor:WaitForChild("OpenScript")
 
 local CurrentSaveInstanceWindow
@@ -7709,7 +7712,7 @@ bindGetAwait.OnInvoke = function()
 end
 end)
 spawn(function()
-	local top = D_E_X.ScriptEditor
+	local top = D_E_X:WaitForChild(scriptedit)
 
 local editorGrid = top:WaitForChild("EditorGrid")
 
