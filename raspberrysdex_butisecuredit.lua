@@ -1289,7 +1289,7 @@ NewGuiPart109.Size = UDim2.new(0, 140, 0, 30)
 NewGuiPart109.ZIndex = 2
 NewGuiPart109.Font = Enum.Font.SourceSansBold
 NewGuiPart109.FontSize = Enum.FontSize.Size28
-NewGuiPart109.Text = "Secured by yixiyotatsuki"
+NewGuiPart109.Text = "Made by RaspberryPi, Secured by yixiyotatsuki"
 NewGuiPart109.TextWrapped = true
 
 NewGuiPart110.Name = "Slant"
