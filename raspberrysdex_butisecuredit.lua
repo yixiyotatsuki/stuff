@@ -1,7 +1,7 @@
 function randomstring()
   local text = ""
-  for i=1,50 do
-    text=text..string.char(math.random(1,128))
+  for i=1,math.random(10,20) do
+    text=text..string.char(math.random(2,128))
   end
   return(text)
 end
