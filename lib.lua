@@ -21,7 +21,7 @@ function module:GetPlayer(name:string,ignoreLocalPlayer):Player -- get player fr
     return target
 end
 
-function Stopwatch() -- upvalue, creates a stopwatch (useful for waiting a few seconds in a repeat until loop)
+function module:Stopwatch() -- upvalue, creates a stopwatch (useful for waiting a few seconds in a repeat until loop)
     local timer=0
     game:GetService("RunService").Heartbeat:Connect(function(delta)
         timer+=delta
@@ -31,7 +31,7 @@ function Stopwatch() -- upvalue, creates a stopwatch (useful for waiting a few s
     end
 end
 
-function loadAnimation(id):AnimationTrack -- returns an animationtrack using the id
+function module:loadAnimation(id):AnimationTrack -- returns an animationtrack using the id
     local anim=Instance.new("Animation")
     anim.AnimationId=tostring(id)
     local char=game:GetService("Players").LocalPlayer.Character
