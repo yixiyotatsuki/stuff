@@ -40,4 +40,10 @@ function module:loadAnimation(id):AnimationTrack -- returns an animationtrack us
     return data
 end
 
+function module:fireRemote(remote,args)
+    task.spawn(function()
+        remote:FireServer(unpack(args))
+    end)
+end
+
 return module
