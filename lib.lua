@@ -1,7 +1,7 @@
 -- https://raw.githubusercontent.com/yixiyotatsuki/stuff/refs/heads/main/lib.lua
 local module={}
 
-function module:GetNetworkPing():number -- returns user ping by seconds (great for remote stuff, autorespawn etc)
+function module:GetPing():number -- returns user ping by seconds (great for remote stuff, autorespawn etc)
     local item=game:GetService("Stats"):WaitForChild("Network"):WaitForChild("ServerStatsItem")
     local value=item:WaitForChild("Data Ping"):GetValue()
 
