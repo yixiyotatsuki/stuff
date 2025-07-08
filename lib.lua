@@ -46,4 +46,8 @@ function module:fireRemote(remote,args)
     end)
 end
 
+function module:GetTool(name)
+    return game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):FindFirstChild(name) or game:GetService("Players").LocalPlayer.Character:FindFirstChild(name)
+end
+
 return module
