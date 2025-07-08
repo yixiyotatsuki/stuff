@@ -40,13 +40,13 @@ function module:loadAnimation(id):AnimationTrack -- returns an animationtrack us
     return data
 end
 
-function module:fireRemote(remote,args)
+function module:fireRemote(remote,args) -- fires a remote
     task.spawn(function()
         remote:FireServer(unpack(args))
     end)
 end
 
-function module:GetTool(name)
+function module:GetTool(name) -- searches for the tool in the players inventory or the players character (holding item)
     return game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):FindFirstChild(name) or game:GetService("Players").LocalPlayer.Character:FindFirstChild(name)
 end
 
