@@ -9,16 +9,15 @@ function module:GetPing():number -- returns user ping by seconds (great for remo
 end
 
 function module:GetPlayer(name:string,ignoreLocalPlayer):Player -- get player from shortened name (ignore caps, display and user are checked)
-    local target=nil
     for _,v:Player in ipairs(game:GetService("Players"):GetPlayers()) do
         local display,user=v.DisplayName:lower(),v.Name:lower()
         if v==game:GetService("Players").LocalPlayer and ignoreLocalPlayer then continue end
 
         if (user:sub(1,#name)==name) or (display:sub(1,#name)==name) then
-            target=v
+            return v
         end
     end
-    return target
+    return nil
 end
 
 function module:Stopwatch() -- upvalue, creates a stopwatch (useful for waiting a few seconds in a repeat until loop)
