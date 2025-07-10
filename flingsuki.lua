@@ -13,6 +13,10 @@ local RS=RunService.RenderStepped
 local Player=Players.LocalPlayer
 local Character=Player.Character
 local HumanoidRootPart=Character:WaitForChild("HumanoidRootPart")
+Player.CharacterAdded:Connect(function(character)
+    Character=character
+    HumanoidRootPart=Character:WaitForChild("HumanoidRootPart")
+end)
 
 function fling(player,hrpname)
     local char=player.Character
