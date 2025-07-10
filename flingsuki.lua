@@ -23,9 +23,9 @@ function fling(player,hrpname)
     local hum,hrp=char:WaitForChild("Humanoid"),char:FindFirstChild(hrpname or "HumanoidRootPart")
     local time=funclib:Stopwatch()
     local bodypos=Instance.new("BodyPosition")
-    bodypos.P=150000
+    bodypos.P=1500000
     bodypos.MaxForce=Vector3.one*1/0
-    bodypos.D=1000
+    bodypos.D=10000
     bodypos.Parent=HumanoidRootPart
     for i,v in pairs(char:GetDescendants()) do
         if v:IsA("BasePart") then
@@ -38,9 +38,9 @@ function fling(player,hrpname)
         workspace.CurrentCamera.CameraSubject=hum
         Character:WaitForChild("Humanoid").PlatformStand=true
         local moveprediction=hrp.Velocity/(1.5+funclib:GetPing())
-        bodypos.Position=hrp.Position+moveprediction+Vector3.new(0,math.random(-1,1)*5,0)
+        bodypos.Position=hrp.Position+moveprediction
         t=-t
-        HumanoidRootPart.AssemblyAngularVelocity=Vector3.new(0,t*10000,0)
+        HumanoidRootPart.AssemblyAngularVelocity=Vector3.new(0,t*15000,0)
         task.wait()
     until time()>=5 or hrp.Velocity.Magnitude>=1000
     bodypos:Destroy()
