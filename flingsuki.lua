@@ -48,8 +48,9 @@ function fling(player,hrpname)
 end
 
 Player.Chatted:Connect(function(msg)
-    local args=msg:sub(2,#msg):split()
+    local args=msg:sub(2,#msg):split(" ")
     if msg:sub(1)=="-" then
+        print("prefix detected")
         if args[1]=="fling" then
             local plr=funclib:GetPlayer(args[2])
             if plr~=nil then
