@@ -2,7 +2,7 @@
 local module={}
 
 function module:GetPing():number -- returns user ping by seconds (great for remote stuff, autorespawn etc)
-    local item=game:GetService("Stats"):WaitForChild("Network"):WaitForChild("ServerStatsItem")
+    local item=game:GetService("Stats"):WaitForChild("Network"):WaitForChild("ServerStatsItem") -- to whoever protests that player:GetNetworkPing() is better fuck you
     local value=item:WaitForChild("Data Ping"):GetValue()
 
     return value/1000
