@@ -1,4 +1,4 @@
--- https://raw.githubusercontent.com/yixiyotatsuki/stuff/refs/heads/main/lib.lua
+-- https://raw.githubusercontent.com/yixiyotatsuki/stuff/refs/heads/main/funclib.lua
 local module={}
 
 function module:GetPing():number -- returns user ping by seconds (great for remote stuff, autorespawn etc)
@@ -6,6 +6,15 @@ function module:GetPing():number -- returns user ping by seconds (great for remo
     local value=item:WaitForChild("Data Ping"):GetValue()
 
     return value/1000
+end
+
+--[[ i removed this because i think its useless
+function module:GetPhysicsDelta():number
+    return 1/workspace:GetRealPhysicsFPS()
+end
+]]
+function module:GetRenderDelta():number -- this probably isnt accurate
+    return game:GetService("Stats").HeartbeatTime
 end
 
 function module:GetPlayer(name:string,ignoreLocalPlayer):Player -- get player from shortened name (ignore caps, display and user are checked)
