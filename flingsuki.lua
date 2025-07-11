@@ -1,8 +1,3 @@
---[[
-prefix is "-"
--fling (user or display, can be shortened) = format
-]]
-
 local Fluent=loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local funclib=loadstring(game:HttpGet("https://raw.githubusercontent.com/yixiyotatsuki/stuff/main/funclib.lua"))()
 local Players=game:GetService("Players")
@@ -22,10 +17,10 @@ function fling(player,hrpname)
     local char=player.Character
     local hum,hrp=char:WaitForChild("Humanoid"),char:FindFirstChild(hrpname or "HumanoidRootPart")
     local time=funclib:Stopwatch()
-    local bodypos=Instance.new("BodyPosition")
-    bodypos.P=1500000
+    local bodypos,bv=Instance.new("BodyPosition")
+    bodypos.P=150000
     bodypos.MaxForce=Vector3.one*1/0
-    bodypos.D=10000
+    bodypos.D=1000
     bodypos.Parent=HumanoidRootPart
     for i,v in pairs(char:GetDescendants()) do
         if v:IsA("BasePart") then
@@ -40,9 +35,9 @@ function fling(player,hrpname)
         local moveprediction=hrp.Velocity/(1.5+funclib:GetPing())
         bodypos.Position=hrp.Position+moveprediction
         t=-t
-        HumanoidRootPart.AssemblyAngularVelocity=Vector3.new(0,t*15000,0)
+        HumanoidRootPart.AssemblyAngularVelocity=Vector3.new(0,t*25000,0)
         task.wait()
-    until time()>=5 or hrp.Velocity.Magnitude>=1000
+    until time()>=5 or hrp.Velocity.Magnitude>=1000 and hum.FloorMaterial==Enum.Material.Air
     bodypos:Destroy()
     local time=funclib:Stopwatch()
     repeat
