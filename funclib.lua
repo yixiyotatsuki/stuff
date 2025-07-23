@@ -55,8 +55,8 @@ function module:fireRemote(remote,args) -- fires a remote
 end
 
 function module:GetTool(name) -- searches for the tool in the players inventory or the players character (holding item)
-    local object=return game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):FindFirstChild(name)
-    if object==nil and game:GetService("Players").LocalPlayer.Character~=nil then game:GetService("Players").LocalPlayer.Character:FindFirstChild(name) end
+    local object=game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):FindFirstChild(name)
+    if object==nil and game:GetService("Players").LocalPlayer.Character~=nil then object=game:GetService("Players").LocalPlayer.Character:FindFirstChild(name) end
     return object
 end
 
